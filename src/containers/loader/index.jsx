@@ -5,12 +5,12 @@ import { connect } from 'react-redux'
 /**
  * here we handle passing redux to our component and export
  */
-// const mapStateToProps = state => ({
-
-// })
+const mapStateToProps = state => ({
+  loading: state.Loading.loading
+})
 
 // const mapDispatchToProps = dispatch => ({
 
 // })
 
-export default connect(null, null)(Loader)
+export default connect(mapStateToProps, null)(Loader)

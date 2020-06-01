@@ -7,7 +7,7 @@ background: ${props => props.theme.white}
 display: flex;
 justify-content: space-around;
 align-items: center;
-padding:0 55px;
+padding:0 ;
 `
 export const SideNav = styled.div`
 display: flex;

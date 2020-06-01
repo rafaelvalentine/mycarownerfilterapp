@@ -1,6 +1,6 @@
 import React from 'react'
 import * as Page from './styles'
-import { SelectAlt } from '../../components/Input'
+import { SelectAlt } from '../../components/input'
 
 const Pagination = ({ data, currentPage, handlePagnationUp, handlePagnationDown, newindexOfFirstUser, handleDataRange, pageUsers, allUsers, pageNumbers, selectedPage, pageLimit, upperPageBound, lowerPageBound, ...props}) => {
   const pages = pageNumbers().map(page => {

@@ -1,4 +1,4 @@
-import Card from './cards'
+export { default as Card, FilterCard} from './cards'
 
 
 
@@ -8,5 +8,3 @@ import Card from './cards'
 
 
 
-
-export default Card

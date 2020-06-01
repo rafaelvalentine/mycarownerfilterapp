@@ -1,20 +1,20 @@
-import type from '../type'
+// import type from '../type'
 import { HTTP } from '../../api/index'
 
 /**
  * types for reducer action
  */
-const {  LOGIN_DATA } = type
+// const {  LOGIN_DATA } = type
 /**
  * @name handleSetUser
  * @description redux action function passes payload and action for reducer 
  * @param {Object} payload 
  * @return {NUll} null
  */
-const handleSetUser = payload => ({
-  type: LOGIN_DATA,
-  payload
-})
+// const handleSetUser = payload => ({
+//   type: LOGIN_DATA,
+//   payload
+// })
 
 
  

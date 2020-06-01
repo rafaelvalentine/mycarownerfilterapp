@@ -8,7 +8,7 @@ const index = props => {
        {props.loading ? <Wrapper>
         <Loader
           type='Rings'
-          color='#1b55e2'
+          color='#C223CE'
           height={200}
           width={200}
         />

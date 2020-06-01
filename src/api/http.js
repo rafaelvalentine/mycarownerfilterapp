@@ -8,14 +8,20 @@ import axios from "axios";
  * @return {Object}
  */
 export default (() => {
-    const growthApi = () => axios.create({
-        baseURL: 'https://',
+    const serverApi = () => axios.create({
+        baseURL: 'http://localhost:4040/api/v1',
         headers: {
-            Authorization: `Bearer ${}`
+            Authorization: `Bearer ${''}`
         }
     });
-
+    const filterApi = () => axios.create({
+        baseURL: 'https://ven10.co/assessment/filter.json',
+        headers: {
+            Authorization: `Bearer ${''}`
+        }
+    });
     return {
-        growthApi
+        serverApi,
+        filterApi
     }
 })();

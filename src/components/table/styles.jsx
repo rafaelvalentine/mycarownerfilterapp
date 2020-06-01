@@ -1,7 +1,7 @@
-import styled from './node_modules/styled-components'
+import styled from 'styled-components'
 
 export const Wrapper = styled.section`
-padding: ${props => props.padding ? props.padding : '50px 80px'};
+padding: ${props => props.padding ? props.padding : '50px'};
 width: 100%;
 height: 100%;
 `
@@ -29,12 +29,12 @@ export const Tbody = styled.tr`
   td{
   border: none;
   border-bottom: 1px solid #eeeeee !important;
-  padding: 16px 0;
-  padding-left: 83px;
+  padding: 16px 0 0;
+  // padding-left: 83px;
   padding-right: 50px;
 }
 &.jobtable td{
-  padding-left: 33px;
+  // padding-left: 33px;
   padding-right: 10px;
 }
 `
@@ -45,7 +45,16 @@ line-height: 16px;
 text-transform: capitalize
 color: ${props => props.altText ? props.theme.green : props.theme.text};
 margin:0;
+text-align:center;
 `
+export const TextArea = styled.textarea`
+font-size: 12px;
+line-height: 16px;
+resize: none;
+height: 42px;
+border: none;
+`
+
 export const TextAlt = styled(Text)`
 overflow-wrap: break-word;
 word-wrap: break-word;

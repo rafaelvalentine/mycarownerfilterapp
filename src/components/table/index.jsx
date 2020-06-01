@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useRef } from './node_modules/react'
-import { Table } from './node_modules/react-bootstrap'
+import React from 'react'
+import { Table } from 'react-bootstrap'
 import * as PageTable from './styles'
 import { TableHead } from './TableParts'
-import { TransactionList, JobList, CategoryList } from './TableList'
-import { CardHeader as Header } from '../../theme/style/typeface'
-import Pagination from '../Tools/Pagination'
-import { SortInput } from '../Input'
-import { TransactionDropDown } from '../DropDown'
+import { CarOwnersList} from './TableList'
+import { CardHeader as Header } from '../../themes/style/typeface'
+import Pagination from '../../tools/Pagination'
+// import { SortInput } from '../Input'
+// import { TransactionDropDown } from '../DropDown'
 
 export const DashboardTable = ({ 
   title,
@@ -37,14 +37,20 @@ export const DashboardTable = ({
         {header}
         <Table id='myTable'>
           <TableHead>
-            <th>date</th>
-            <th>job info</th>
-            <th>paid by</th>
-            <th>amount</th>
-            <th>paid to</th>
+            <th>id</th>
+            <th>first name</th>
+            <th>last name</th>
+            <th>email</th>
+            <th>country</th>
+            <th>car model</th>
+            <th>car model year</th>
+            <th>car colour</th>
+            <th>gender</th>
+            <th>job title</th>
+            <th>bio</th>
           </TableHead>
           <tbody>
-            <TransactionList data={data} />
+            <CarOwnersList data={data} />
           </tbody>
 
         </Table>
@@ -67,4 +73,4 @@ export const DashboardTable = ({
   )
 }
 
-export default Table
+export default DashboardTable 

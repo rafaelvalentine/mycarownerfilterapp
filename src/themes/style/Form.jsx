@@ -321,7 +321,7 @@ export const Select = styled.select`
     font-size: 10px;
     line-height: 14px;
     appearance: none;
-    background-image: url(${require('../../assets/images/arrow-dropdown.svg')});
+    background-image: url(${require('../images/arrow-dropdown.svg')});
     background-repeat: no-repeat;
     background-position: 90%;
     background-size: center;

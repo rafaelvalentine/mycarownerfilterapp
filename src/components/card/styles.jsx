@@ -1,5 +1,5 @@
-import styled from './node_modules/styled-components'
-import { device } from '../device'
+import styled from 'styled-components'
+// import { device } from '../device'
 
 export const Container = styled.div`
     background-color: ${props => props.backgroundColor ? props.theme[props.backgroundColor] : props.theme.white};
